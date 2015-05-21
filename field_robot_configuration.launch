@@ -29,7 +29,7 @@
     
     <!--<node pkg="transform_broadcasters" name="robot_tf_publisher" type="robot_tf_publisher"/>-->
    
-   <node pkg ="wheels_controller" type="wheels_controller" name="wheels_controller"/>  
+   <node pkg ="wheels_controller" type="wheels_controller" name="wheels_controller"/> 
   
    <!--<node pkg="map_server" type="map_server" name="map_server" args="$(find field_robot_2dnav)/maps/robotics_lab.pgm" />-->
 
@@ -47,6 +47,8 @@
     <rosparam file="$(find field_robot_2dnav)/costmaps/local_costmap_params.yaml" command="load" />
     <rosparam file="$(find field_robot_2dnav)/costmaps/global_costmap_params.yaml" command="load" />
     <rosparam file="$(find field_robot_2dnav)/base_local_planner_params.yaml" command="load" />
+    <param name="controller_frequency" type="double" value="2.0"/>
+    
   </node>
 
 </launch>

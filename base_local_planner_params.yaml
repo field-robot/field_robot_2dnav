@@ -9,3 +9,5 @@ TrajectoryPlannerROS:
   acc_lim_y: 2.5
 
   holonomic_robot: true
+  vx_samples: 8
+  vtheta_samples: 8
