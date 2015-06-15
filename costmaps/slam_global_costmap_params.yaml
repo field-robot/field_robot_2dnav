@@ -2,7 +2,7 @@ global_costmap:
   global_frame: /map
   robot_base_frame: base_link
   update_frequency: 10
-  static_map: true
+  static_map: false
   vx_samples: 8
   vy_samples: 8
   width : 20
