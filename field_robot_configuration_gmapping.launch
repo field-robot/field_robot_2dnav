@@ -72,8 +72,7 @@
     <rosparam file="$(find field_robot_2dnav)/costmaps/slam_global_costmap_params.yaml" command="load" />
     <rosparam file="$(find field_robot_2dnav)/slam_base_local_planner_params.yaml" command="load" />
     <rosparam name="controller_loop" type="double" value="2.0"/>
-    <rosparam name="clearing_rotation_allowed" type="bool" value="false"/>
-    <rosparam name="recovery_behavior_enabled" type="bool" value="false"/>
+    <rosparam name="recovery_behavior_enabled" type="bool" value="true"/>
   </node>
 
 </launch>
